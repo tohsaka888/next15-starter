@@ -1,0 +1,21 @@
+[
+  {
+    "file": "main.c",
+    "fn_list": [
+      {
+        "name": "main",
+        "code": "int main() { return 0; }",
+        "docs": "xxxxxxxxxxxxxxx",
+        "plantuml": "xxxxxxxxxxxxxxx"
+      },
+      {
+        "name": "foo",
+        "code": "int foo() { return 0; }",
+        "docs": "xxxxxxxxxx",
+        "plantuml": "xxxxxxxxxxxxxxx"
+      }
+    ],
+    "docs": "xxxxxxxxxx",
+    "plantuml": "xxxxxxxx"
+  }
+]

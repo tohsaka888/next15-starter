@@ -1,0 +1,147 @@
+{
+  "configVersion": "1",
+  "staticTemplate": [
+    "✨feat: Short description",
+    "",
+    "Message body",
+    "",
+    "Message footer"
+  ],
+  "dynamicTemplate": [
+    "{type}{scope}: {description}",
+    "",
+    "--------------📎Detail--------------",
+    "{body}"
+  ],
+  "tokens": [
+    {
+      "label": "Type",
+      "name": "type",
+      "type": "enum",
+      "combobox": true,
+      "options": [
+        {
+          "label": "✨feat(引入新特性)",
+          "value": "✨feat",
+          "description": "引入新特性"
+        },
+        {
+          "label": "🩹fix(简单修复非关键性问题)",
+          "value": "🩹fix",
+          "description": "简单修复非关键性问题"
+        },
+        {
+          "label": "🚑fix(紧急热修复)",
+          "value": "🚑fix",
+          "description": "紧急热修复"
+        },
+        {
+          "label": "⬇️chore(降级依赖版本)",
+          "value": "⬇️chore",
+          "description": "降级依赖版本"
+        },
+        {
+          "label": "⬆️chore(升级依赖版本)",
+          "value": "⬆️chore",
+          "description": "升级依赖版本"
+        },
+        {
+          "label": "🎨style(更新样式)",
+          "value": "🎨style",
+          "description": "更新样式"
+        },
+        {
+          "label": "🐛fix(修复 BUG)",
+          "value": "🐛fix",
+          "description": "修复 BUG"
+        },
+        {
+          "label": "🚧construction(进行中的工作)",
+          "value": "🚧construction",
+          "description": "进行中的工作"
+        },
+        {
+          "label": "🌐i18n(国际化和本地化)",
+          "value": "🌐i18n",
+          "description": "国际化和本地化"
+        },
+        {
+          "label": "📦chore(新增依赖)",
+          "value": "📦chore",
+          "description": "新增依赖"
+        },
+        {
+          "label": "📄docs(新增或更新 License README)",
+          "value": "📄docs",
+          "description": "新增或更新 License README"
+        },
+        {
+          "label": "♻️refactor(重构代码)",
+          "value": "♻️refactor",
+          "description": "重构代码"
+        },
+        {
+          "label": "⏪revert(还原修改)",
+          "value": "⏪revert",
+          "description": "还原修改"
+        },
+        {
+          "label": "🚀uperf(性能优化)",
+          "value": "🚀uperf",
+          "description": "性能优化"
+        },
+        {
+          "label": "🙈ignore(新增或更新 .gitignore 文件)",
+          "value": "🙈ignore",
+          "description": "新增或更新 .gitignore 文件"
+        },
+        {
+          "label": "🎉init(初次提交)",
+          "value": "🎉init",
+          "description": "初次提交"
+        },
+        {
+          "label": "🔀merge(合并分支)",
+          "value": "🔀merge",
+          "description": "合并分支"
+        },
+        {
+          "label": "✅pass(添加、更新或通过测试)",
+          "value": "✅pass",
+          "description": "添加、更新或通过测试"
+        },
+        {
+          "label": "🤖CI/CD(添加或更新 CI/CD 配置文件)",
+          "value": "🤖CI/CD",
+          "description": "添加或更新 CI/CD 配置文件"
+        }
+      ],
+      "description": "Type of changes"
+    },
+    {
+      "label": "Scope",
+      "name": "scope",
+      "description": "A scope may be provided to a commit’s type, to provide additional contextual information and is contained within parenthesis, e.g., \"feat(parser): add ability to parse arrays\".",
+      "type": "text",
+      "multiline": false,
+      "prefix": "(",
+      "suffix": ")"
+    },
+    {
+      "label": "Short description",
+      "name": "description",
+      "description": "Short description in the subject line.",
+      "type": "text",
+      "multiline": false
+    },
+    {
+      "label": "Body",
+      "name": "body",
+      "description": "Optional body",
+      "type": "text",
+      "multiline": true,
+      "lines": 5,
+      "maxLines": 10
+    }
+  ]
+}
